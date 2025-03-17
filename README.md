@@ -1,26 +1,6 @@
-# np-asr-vietnamese
+# NP Whisper Base Vietnamese - Finetuned by Nam Phung
 
----
-library_name: transformers
-language:
-- vi
-license: apache-2.0
-base_model: openai/whisper-base
-tags:
-- generated_from_trainer
-datasets:
-- doof-ferb/vlsp2020_vinai_100h
-metrics:
-- wer
-model-index:
-- name: NP Whisper Base Vi - Nam Phung
-  results: []
----
-
-<!-- This model card has been generated automatically according to the information the Trainer had access to. You
-should probably proofread and complete it, then remove this comment. -->
-
-# NP Whisper Base Vi - Nam Phung
+Model in Huggingface: (https://huggingface.co/namphungdn134/np-whisper-base-vi)
 
 This model is a fine-tuned version of [openai/whisper-base](https://huggingface.co/openai/whisper-base) on the vlsp2020_vinai_100h dataset.
 It achieves the following results on the evaluation set:
