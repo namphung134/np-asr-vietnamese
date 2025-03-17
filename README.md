@@ -7,20 +7,6 @@ It achieves the following results on the evaluation set:
 - Loss: 0.4049
 - Wer: 20.3964
 
-## Model description
-
-More information needed
-
-## Intended uses & limitations
-
-More information needed
-
-## Training and evaluation data
-
-More information needed
-
-## Training procedure
-
 ### Training hyperparameters
 
 The following hyperparameters were used during training:
