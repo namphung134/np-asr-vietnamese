@@ -1,6 +1,6 @@
 # NP Whisper Base Vietnamese - Finetuned by Nam Phung
 
-Model in Huggingface: [namphungdn134/np-whisper-base-vi](https://huggingface.co/namphungdn134/np-whisper-base-vi)
+Model in Huggingface: [namphungdn134/whisper-base-vi](https://huggingface.co/namphungdn134/whisper-base-vi)
 
 This model is a fine-tuned version of [openai/whisper-base](https://huggingface.co/openai/whisper-base) on the vlsp2020_vinai_100h dataset.
 It achieves the following results on the evaluation set:
