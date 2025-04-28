@@ -1,28 +1,3 @@
----
-library_name: transformers
-language:
-- vi
-license: mit
-base_model: openai/whisper-small
-tags:
-- generated_from_trainer
-- Speech_to_text
-- audio2text
-- S2T
-- STT
-
-metrics:
-- wer
-model-index:
-- name: Whisper Small Vi - Nam Phung
-  results: []
-pipeline_tag: automatic-speech-recognition
----
-
-<!-- This model card has been generated automatically according to the information the Trainer had access to. You
-should probably proofread and complete it, then remove this comment. -->
-
-
 # Whisper Small Vi V1.1: Whisper Small for Vietnamese Fine-Tuned by Nam Phung 🚀
 
 ## 📝 Introduction
