@@ -1,41 +1,56 @@
-# Whisper Base Vi V1.1: Whisper Base for Vietnamese Fine-Tuned by Nam Phung 🚀
+---
+library_name: transformers
+language:
+- vi
+license: mit
+base_model: openai/whisper-small
+tags:
+- generated_from_trainer
+- Speech_to_text
+- audio2text
+- S2T
+- STT
+
+metrics:
+- wer
+model-index:
+- name: Whisper Small Vi - Nam Phung
+  results: []
+pipeline_tag: automatic-speech-recognition
+---
+
+<!-- This model card has been generated automatically according to the information the Trainer had access to. You
+should probably proofread and complete it, then remove this comment. -->
+
+
+# Whisper Small Vi V1.1: Whisper Small for Vietnamese Fine-Tuned by Nam Phung 🚀
 
 ## 📝 Introduction
 
-This is a fine-tuned version of [openai/whisper-base](https://huggingface.co/openai/whisper-base) model on 100 hours of Vietnamese speech data. The model aims to improve transcription accuracy and robustness for Vietnamese automatic speech recognition (ASR) tasks, especially in real-world scenarios.
+This is a fine-tuned version of [openai/whisper-small](https://huggingface.co/openai/whisper-small) model on Vietnamese speech data. The model aims to improve transcription accuracy and robustness for Vietnamese automatic speech recognition (ASR) tasks, especially in real-world scenarios.
 
 ## 📊 Fine-tuning Results
 
-- **Loss**: 0.4049
-- **Word Error Rate (WER)**: 20.3964
-
-| Training Loss | Epoch  | Step | Validation Loss | Wer     |
-|:-------------:|:------:|:----:|:---------------:|:-------:|
-| 0.5199        | 0.5967 | 1000 | 0.5043          | 25.5525 |
-| 0.3967        | 1.1933 | 2000 | 0.4336          | 21.2506 |
-| 0.3459        | 1.7900 | 3000 | 0.4086          | 20.7572 |
-| 0.3208        | 2.0883 | 3500 | 0.4049          | 20.3964 |
+- **Word Error Rate (WER)**: 9.9060
 
 > Evaluation was performed on a held-out test set with diverse regional accents and speaking styles.
 
 ## 📝 Model Description
 
-The Whisper Base model is a transformer-based sequence-to-sequence model designed for automatic speech recognition and translation tasks. It has been trained on over 680,000 hours of labeled audio data in multiple languages. The fine-tuned version of this model focuses on the Vietnamese language, aiming to improve transcription accuracy and handling of local dialects.
+The Whisper small model is a transformer-small sequence-to-sequence model designed for automatic speech recognition and translation tasks. It has been trained on over 680,000 hours of labeled audio data in multiple languages. The fine-tuned version of this model focuses on the Vietnamese language, aiming to improve transcription accuracy and handling of local dialects.
 
 This model works with the WhisperProcessor to pre-process audio inputs into log-Mel spectrograms and decode them into text.
 
 ## 📁 Dataset
 
-- Total Duration: 100 hours of high-quality Vietnamese speech data  
-- Sources: Public Vietnamese datasets including the [vlsp2020_vinai_100h](https://huggingface.co/vinai/vlsp2020_vinai) dataset
+- Total Duration: More 250 hours of high-quality Vietnamese speech data
+- Sources: Public Vietnamese datasets
 - Format: 16kHz WAV files with corresponding text transcripts  
 - Preprocessing: Audio was normalized and segmented. Transcripts were cleaned and tokenized.  
 
 ## 🚀 How to Use
 
-To use the fine-tuned model, you can go to: https://github.com/namphung134/np-asr-vietnamese
-
-Or you can follow these steps:
+To use the fine-tuned model, you can follow these steps:
 
 1. Install the required dependencies:
    ```python
@@ -115,11 +130,11 @@ If you use this model in your research or application, please cite the original 
 ```
 
 ```
-@misc{title={Whisper Base Vi V1.1 - Nam Phung},
+@misc{title={Whisper small Vi V1.1 - Nam Phung},
   author={Nam Phùng},
   organization={DUT},
   year={2025},
-  url={https://huggingface.co/namphungdn134/whisper-base-vi}
+  url={https://huggingface.co/namphungdn134/whisper-small-vi}
 }
 ```
 
