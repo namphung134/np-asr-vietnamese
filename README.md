@@ -6,7 +6,7 @@ This is a fine-tuned version of [openai/whisper-small](https://huggingface.co/op
 
 ## 📊 Fine-tuning Results
 
-- **Word Error Rate (WER)**: 9.9060
+- **Word Error Rate (WER)**: 9.3485
 
 > Evaluation was performed on a held-out test set with diverse regional accents and speaking styles.
 
